@@ -91,7 +91,7 @@ export default function ChatPage() {
   try {
     await waitForPuter()
     const response = await window.puter.ai.chat(userMessage.content, {
-      model: "claude-3-7-sonnet",
+      model: "claude-sonnet-4-6",
       stream: true,
     })
 
